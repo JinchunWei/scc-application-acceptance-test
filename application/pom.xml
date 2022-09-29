@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.demo</groupId>
-    <artifactId>scc-application-acceptance-test</artifactId>
+    <artifactId>application</artifactId>
     <version>0.0.1</version>
-    <name>scc-application-acceptance-test</name>
+    <name>application</name>
 
     <properties>
         <spring-cloud.version>Hoxton.SR6</spring-cloud.version>
@@ -68,7 +68,7 @@
                 <configuration>
                     <testFramework>JUNIT5</testFramework>
                     <baseClassForTests>com.demo.ApplicationAcceptanceBaseTest</baseClassForTests>
-                    <contractsDirectory>${project.basedir}/src/test/resources/acceptance/</contractsDirectory>
+                    <contractsDirectory>${project.basedir}/src/test/resources/acceptance</contractsDirectory>
                 </configuration>
             </plugin>
             <plugin>
